@@ -1,5 +1,5 @@
 body {
-    background-color: purple;
+    background-color: #000080;
 }
 
 h1 {
@@ -23,16 +23,18 @@ button {
 }
 
 input {
+    border: 1px solid #ccc;
     width: 100%;
     vertical-align: middle;
+    border-radius: 5px;
 }
 
 .container {
-    width: 60%;
+    width: 50%;
     margin:200px auto;
     background-color: white;
     padding: 25px;
-    border-radius: 25px;
+    border-radius: 15px;
 }
 
 
@@ -41,7 +43,7 @@ input {
 }
 
 h1 {
-    color: blue;
+    color: black;
 }
 
 .add_form {
@@ -85,8 +87,8 @@ h1 {
 }
 
 .delete_btn {
-    color: lightgreen;
-    border-color: lightgreen;
+    color: #00FF00;
+    border-color: #00FF00;
 }
 
 .updated_at {
