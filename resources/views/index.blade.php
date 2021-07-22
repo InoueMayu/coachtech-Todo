@@ -29,22 +29,18 @@
             <th>削除</th>
         </tr>
 
-        @foreach ($posts as $post)
+          @foreach ($posts as $post)
         <tr>
           <td class="updated_at">
                 <span>{{$post->updated_at}}</span>
           </td>
 
-          <td class="text_content">
-            <form>
-                @csrf
-                <input type="text" value="{{$post->content}}">
-            </form>
-          </td>
-
           <td>
             <form method="post" action="{{ route('todos.update', $post)}}">
                 @csrf
+                <input type="text" name="content" value="{{$post->content}}">
+            </td>
+          <td>
                 <button class="update_btn">更新</button>
             </form>
           </td>
